@@ -1,3 +1,4 @@
+month = int(input("Enter a number of a month: "))
 def month_to_season(month):
     if month in[12,1,2]:
         return('зима')
@@ -8,7 +9,7 @@ def month_to_season(month):
     elif month in[9,10,11]:
         return('осень')
     else:
-        return('Ннт такоко времени года')
+        return('Некорректно введён номер месяца')
 
 
-print(month_to_season(6))
+print(month_to_season(month))
